@@ -1,0 +1,23 @@
+@import 'variables';
+
+body {
+  margin: 0;
+  font-family: $brand-font-family;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.top-nav {
+  background: $header-bar-blue;
+  overflow: auto;
+}
+
+.container {
+  max-width: 60rem;
+  margin: auto;
+}
