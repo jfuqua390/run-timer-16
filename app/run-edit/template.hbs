@@ -1,0 +1,17 @@
+{{outlet}}
+<div class="new-run">
+    <form {{action submitForm on="submit"}} class="new-run__form" novalidate="novalidate">
+      <h2 class="new-run__title">Edit Run</h2>
+      {{input-formatted pattern= "{{99}}:{{99}}:{{99}}"
+      type="text" class="new-run__input run-time" placeholder="Run Time (HH:MM:SS)" value=model.time}}
+      {{input-formatted pattern= "{{99}}/{{99}}/{{9999}}"
+      type="text" class="new-run__input run-date" placeholder="Race Date (MM/DD/YYYY)" value=model.date}}
+      {{input type="text" class="new-run__input run-notes" placeholder="Race Notes" value=model.notes}}
+      <div class="button-row">
+        {{#link-to "index"}}
+        <button {{action cancelForm on="click"}} class="cancel-button">Cancel</button>
+        {{/link-to}}
+        <button class="save-button">Save</button>
+      </div>
+    </form>
+</div>
