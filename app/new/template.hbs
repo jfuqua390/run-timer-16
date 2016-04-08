@@ -1,12 +1,14 @@
 {{outlet}}
 <div class="new-run">
-    <form class="new-run__form">
+    <form {{action submitForm on="submit"}} class="new-run__form">
       <h2 class="new-run__title">New Run</h2>
-      <input type="text" class="new-run__input run-time" placeholder="Run Time">
-      <input type="text" class="new-run__input run-date" placeholder="Race Date">
-      <input type="text" class="new-run__input run-notes" placeholder="Race Notes">
+      {{input type="text" class="new-run__input run-time" placeholder="Run Time" value=time}}
+      {{input type="text" class="new-run__input run-date" placeholder="Race Date" value=date}}
+      {{input type="text" class="new-run__input run-notes" placeholder="Race Notes" value=notes}}
       <div class="button-row">
-        <button class="cancel-button">Cancel</button>
+        {{#link-to "index"}}
+        <button {{action cancelForm on="click"}} class="cancel-button">Cancel</button>
+        {{/link-to}}
         <button class="save-button">Save</button>
       </div>
     </form>
