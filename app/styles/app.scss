@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'new-run';
 
 body {
   margin: 0;
@@ -14,7 +15,12 @@ ul {
 
 .top-nav {
   background: $header-bar-blue;
+  color: $title-white;
   overflow: auto;
+}
+
+.title {
+  font-weight: lighter;
 }
 
 .container {

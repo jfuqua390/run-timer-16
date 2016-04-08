@@ -1,0 +1,51 @@
+.new-run {
+  background: $brand-background;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 90vh;
+  }
+
+  &__title {
+    margin: 0.5rem 0;
+    color: $title-white;
+  }
+}
+
+.new-run__input {
+  margin: 1rem 0;
+  border: 0;
+  border-bottom: 0.5px solid $placeholder-text;
+  outline: none;
+  background: transparent;
+  color: $green-text;
+  font-family: $brand-font-family;
+  font-size: $brand-font-size;
+
+  &::-webkit-input-placeholder {
+    color: $placeholder-text;
+  }
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel-button {
+  width: 3rem;
+  height: 1.5rem;
+  margin: 1rem 0.5rem;
+  border: 0;
+  background: $button-grey;
+}
+
+.save-button {
+  width: 3rem;
+  height: 1.5rem;
+  margin: 1rem 0.5rem;
+  border: 0;
+  background: $button-green;
+}
