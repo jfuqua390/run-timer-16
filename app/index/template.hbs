@@ -4,10 +4,12 @@
 <div class="index">
   <div class="run-list">
     {{#each model as |run|}}
-      <div class="index__run-item">
+    {{#link-to "run-detail" run._id}}
+      <div  class="index__run-item">
         <p class="index__run-date">{{run.date}}</p>
         <p class="index__run-time">{{run.time}}</p>
       </div>
+      {{/link-to}}
     {{/each}}
   </div>
   <div class="run-list__footer">

@@ -1,0 +1,55 @@
+.run-detail {
+  height: 100%;
+  min-height: 90vh;
+  background: $brand-background;
+  color: $regular-text;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    padding: 2rem 0.5rem 0;
+    color: $title-white;
+    font-size: 24px;
+
+    &-text {
+      margin: 0;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+  }
+
+  &__notes {
+    margin: 0.5rem;
+    font-weight: lighter;
+    flex-grow: 1;
+  }
+
+  &__buttons {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.info__date {
+  margin: 0.5rem 0;
+  font-weight: lighter;
+}
+
+.info__time {
+  margin: 0.5rem 0;
+  color: $green-text;
+  font-weight: lighter;
+}
+
+.fa-angle-left {
+  color: $brand-background;
+  background: $title-white;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding: 1.5rem;
+}

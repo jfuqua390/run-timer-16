@@ -10,6 +10,10 @@
   flex-grow: 1;
 }
 
+.ember-view {
+  text-decoration: none;
+}
+
 .index__run-item {
   display: flex;
   justify-content: space-between;

@@ -18,6 +18,7 @@ export default Ember.Controller.extend({
     .then((newRun) => {
       this.clearForm();
       this.addNewRun(newRun);
+      this.transitionToRoute(`index`);
     });
   },
 

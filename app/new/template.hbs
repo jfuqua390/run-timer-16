@@ -1,6 +1,6 @@
 {{outlet}}
 <div class="new-run">
-    <form {{action submitForm on="submit"}} class="new-run__form">
+    <form {{action submitForm on="submit"}} class="new-run__form" novalidate="novalidate">
       <h2 class="new-run__title">New Run</h2>
       {{input-formatted pattern= "{{99}}:{{99}}:{{99}}"
       type="text" class="new-run__input run-time" placeholder="Run Time (HH:MM:SS)" value=time}}
