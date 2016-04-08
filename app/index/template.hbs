@@ -1,6 +1,18 @@
-<h2>
-  {{#link-to "new"}}
-  New Run
-  {{/link-to}}
-</h2>
+
+
 {{outlet}}
+<div class="index">
+  <div class="run-list">
+    {{#each model as |run|}}
+      <div class="index__run-item">
+        <p class="index__run-date">{{run.date}}</p>
+        <p class="index__run-time">{{run.time}}</p>
+      </div>
+    {{/each}}
+  </div>
+  <div class="run-list__footer">
+    {{#link-to "new"}}
+      <span class="fa fa-plus"></span>
+    {{/link-to}}
+  </div>
+</div>

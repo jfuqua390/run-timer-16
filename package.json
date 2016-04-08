@@ -43,5 +43,8 @@
     "eslint-config-rtablada": "^1.0.1",
     "loader.js": "^4.0.1",
     "sass-lint": "^1.5.1"
+  },
+  "dependencies": {
+    "ember-cli-formatter": "0.0.6"
   }
 }
